@@ -28,11 +28,11 @@ static inline const char* getBTDefaultName()
     char device[PROPERTY_VALUE_MAX];
     property_get("ro.product.device", device, "");
 
-    if (!strcmp("beyond0", device)) {
+    if (!strcmp("beyond0lte", device)) {
         return "Galaxy S10e";
     }
 
-    if (!strcmp("beyond2", device)) {
+    if (!strcmp("beyond2lte", device)) {
         return "Galaxy S10+";
     }
 
@@ -54,6 +54,11 @@ static inline const char* getBTDefaultName()
 
 /* 'strings libbluetooth.so' */
 #define BTA_AV_SINK_INCLUDED TRUE
+
+#define BTM_WBS_INCLUDED TRUE       /* Enable WBS */
+#define BTIF_HF_WBS_PREFERRED FALSE /* Don't prefer WBS    */
+
+#define BTM_SCO_ENHANCED_SYNC_ENABLED FALSE
 
 #pragma pop_macro("PROPERTY_VALUE_MAX")
 

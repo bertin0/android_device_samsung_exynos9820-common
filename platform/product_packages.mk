@@ -18,7 +18,8 @@ PRODUCT_PACKAGES += \
 ### BLUETOOTH
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl:64 \
-    android.hardware.bluetooth@1.0-service
+    android.hardware.bluetooth@1.0-service \
+    libbt-vendor:64
 
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
@@ -117,6 +118,7 @@ PRODUCT_PACKAGES += \
 
 ### NFC
 PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.2-service.samsung \
     com.android.nfc_extras \
     NfcNci \
     Tag
@@ -164,7 +166,7 @@ PRODUCT_PACKAGES += \
 
 ### USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.1-service.exynos9820
+    android.hardware.usb@1.1-service.typec
 
 ### USB TRUST HAL
 PRODUCT_PACKAGES += \

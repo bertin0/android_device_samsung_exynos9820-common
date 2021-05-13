@@ -1,8 +1,7 @@
-# Common proprietary files - from Samsung package version G973FXXU9FUBD, unless pinned
+# Common proprietary files - from Samsung package version G973FXXU9FUCD, unless pinned
 
 ### AUDIO
 vendor/etc/audio_board_info.xml
-vendor/etc/audio_effects.xml
 vendor/etc/default_volume_tables.xml
 vendor/etc/mixer_paths.xml
 vendor/etc/usb_audio_policy_configuration.xml
@@ -45,7 +44,6 @@ vendor/lib64/libsynaFpSensorTestNwd.so
 ### BLUETOOTH
 # Bluetooth (aptX) - from crosshatch - QP1A.190711.020
 product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
-vendor/lib64/libbt-vendor.so
 
 ### CAMERA
 vendor/lib/camera.device@1.0-impl.so
@@ -133,13 +131,7 @@ vendor/lib64/libkeymaster_helper.so
 
 ### NFC
 system/etc/libnfc-nci.conf:vendor/etc/libnfc-nci.conf
-vendor/bin/hw/sec.android.hardware.nfc@1.2-service
-vendor/etc/init/sec.android.hardware.nfc@1.2-service.rc
--vendor/etc/vintf/manifest/sec.android.hardware.nfc@1.2-service.xml
 vendor/firmware/nfc/sec_s3nrn82_firmware.bin
-vendor/lib64/libNfcProperties.so
-vendor/lib64/nfc_nci_sec.so
-vendor/lib64/vendor.samsung.hardware.nfc@2.0.so
 
 ### OMX
 vendor/lib/libepicoperator.so
@@ -179,7 +171,6 @@ vendor/lib64/libRSDriverArm.so
 vendor/bin/hw/rild
 vendor/bin/cbd
 vendor/etc/init/init.vendor.rilchip.rc
-vendor/etc/init/init.vendor.rilcommon.rc
 vendor/etc/plmn_delta.bin
 vendor/etc/plmn_delta_attaio.bin
 vendor/etc/plmn_delta_hktw.bin
