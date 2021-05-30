@@ -41,4 +41,4 @@ $(INSTALLED_DTBIMAGE_TARGET): $(PRODUCT_OUT)/kernel $(MKDTIMG) $(AVBTOOL)
 .PHONY: dtbimage
 dtbimage: $(INSTALLED_DTBIMAGE_TARGET)
 
-$(call add-radio-file,../../../../$(INSTALLED_DTBIMAGE_TARGET))
+$(call add-radio-file,dtb.img)
