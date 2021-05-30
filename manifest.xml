@@ -302,7 +302,6 @@
             <name>IAdaptiveBacklight</name>
             <instance>default</instance>
         </interface>
-        -->
         <interface>
             <name>IDisplayColorCalibration</name>
             <instance>default</instance>
@@ -319,5 +318,6 @@
             <name>ISunlightEnhancement</name>
             <instance>default</instance>
         </interface>
+        -->
     </hal>
 </manifest>
