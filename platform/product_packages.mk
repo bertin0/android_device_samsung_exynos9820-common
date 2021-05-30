@@ -183,3 +183,12 @@ PRODUCT_PACKAGES += \
     WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
+
+### TELEPHONY
+PRODUCT_PACKAGES += \
+   telephony-ext \
+   ims-ext-common \
+   ims_ext_common.xml
+
+PRODUCT_BOOT_JARS += \
+   telephony-ext
