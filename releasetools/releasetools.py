@@ -1,6 +1,6 @@
 #!/bin/env python3
 #
-# Copyright (C) 2021 The LineageOS Open Source Project
+# Copyright (C) 2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -34,4 +34,5 @@ def AddImage(info, dir, basename, dest):
 def OTA_InstallEnd(info):
   AddImage(info, "RADIO", "dtb.img", "/dev/block/by-name/dtb")
   AddImage(info, "IMAGES", "dtbo.img", "/dev/block/by-name/dtbo")
+  AddImage(info, "IMAGES", "vbmeta.img", "/dev/block/by-name/vbmeta")
   return
