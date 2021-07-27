@@ -256,6 +256,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libshim_sensorndkbridge
 
+# Soong Namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(COMMON_PATH) \
+    hardware/google/interfaces \
+    hardware/google/pixel \
+    hardware/samsung/aidl/power-libperfmgr
+
 # Tethering
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay
