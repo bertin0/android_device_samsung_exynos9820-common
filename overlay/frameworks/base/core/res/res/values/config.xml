@@ -492,4 +492,7 @@
 
     <!-- Enable night light -->
     <bool name="config_nightDisplayAvailable">true</bool>
+
+    <!-- Enable blur -->
+    <bool name="blur_enabled_by_default">true</bool>
 </resources>
