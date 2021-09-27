@@ -193,6 +193,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libepicoperator
 
+# OTA
+PRODUCT_PACKAGES += \
+    SystemUpdates
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 PRODUCT_ENFORCE_RRO_TARGETS := *
