@@ -94,6 +94,8 @@ PRODUCT_PACKAGES += \
 ifeq ($(TARGET_HAVE_FOD),true)
 PRODUCT_PACKAGES += \
     vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.samsung
+
+EXTRA_FOD_ANIMATIONS := true
 endif
 
 # Gatekeeper
