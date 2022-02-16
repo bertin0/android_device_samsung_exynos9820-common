@@ -77,7 +77,6 @@
                 "0x0017cdc0",
                 "0x001506d0",
                 "0x000c7f38",
-                "0x0007ef40",
                 "0x00000000"
             ],
             "HoldFd": true,
@@ -111,7 +110,7 @@
             "Name": "TASchedtuneBoost",
             "Path": "/dev/stune/top-app/schedtune.boost",
             "Values": [
-                "10",
+                "30",
                 "5"
             ],
             "ResetOnInit": true
@@ -187,27 +186,9 @@
     "Actions": [
         {
             "PowerHint": "INTERACTION",
-            "Node": "CPUBigClusterMinFreq",
-            "Duration": 0,
-            "Value": "0x00156c60"
-        },
-        {
-            "PowerHint": "INTERACTION",
-            "Node": "CPUBigPlusClusterMinFreq",
-            "Duration": 0,
-            "Value": "0x0007ef40"
-        },
-        {
-            "PowerHint": "INTERACTION",
-            "Node": "CPULittleClusterMinFreq",
-            "Duration": 0,
-            "Value": "0x0011a788"
-        },
-        {
-            "PowerHint": "INTERACTION",
             "Node": "TASchedtuneBoost",
             "Duration": 0,
-            "Value": "10"
+            "Value": "30"
         },
         {
             "PowerHint": "LAUNCH",
@@ -379,4 +360,3 @@
         }
     ]
 }
-
