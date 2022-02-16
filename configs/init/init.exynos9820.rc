@@ -260,6 +260,14 @@ on init
 
     start watchdogd
 
+    setprop ro.boot.hardware.revision ${ro.revision}
+
+on property:ro.hardware=exynos9820
+    setprop ro.soc.model "Exynos 9820"
+
+on property:ro.hardware=exynos9825
+    setprop ro.soc.model "Exynos 9825"
+
 on fs
 # Permissions for backlight
     chown system system /sys/class/backlight/panel/brightness
@@ -995,13 +1003,6 @@ on fs
 
     mkdir /mnt/vendor/persist/data/sfs 0700 system system
     mkdir /mnt/vendor/persist/data/tz 0700 system system
-
-    # Enable rmnet data and aggregation
-    setprop persist.rmnet.mux enabled
-    setprop persist.rmnet.data.enable true
-    setprop persist.data.wda.enable true
-    setprop persist.data.df.agg.dl_pkt 10
-    setprop persist.data.df.agg.dl_size 4096
 
 # Permissions for ION
     chmod 0660 /sys/class/ion_cma/ion_video_ext/isolated
