@@ -142,9 +142,12 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/init/init.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.samsung.rc \
     $(COMMON_PATH)/configs/init/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
 
-ifeq ($(TARGET_HAVE_FOD),true)
+# UDFPS
+ifeq ($(TARGET_HAVE_UDFPS),true)
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/init/init.udfps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.udfps.rc
+
+EXTRA_UDFPS_ANIMATIONS := true
 endif
 
 # Keylayout
